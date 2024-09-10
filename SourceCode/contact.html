@@ -1,0 +1,158 @@
+contactus/contact.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>easyDo | Contact Form</title>
+    <link rel="stylesheet" href="style/cstyle.css" />
+    <script src="script/contact .js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h2 class ="logo">easyDo</h2>
+      <nav class="navigation">
+          <a href="index.html">Home</a>
+          <a href="">About</a>
+          <a href="">Service</a>
+      </nav>
+  </div>
+
+
+    <div class="container">
+      <span class="big-circle"></span>
+      <!-- <img src="images/shape3.jpg" class="square" alt="" /> -->
+    
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            “Need reliable workers for your project? We're here to help! Reach out today,
+            and let’s discuss how we can provide the skilled labor you need, right when you need it.
+            Contact us for inquiries, quotes, or any questions you may have.”
+          </p>
+          <div class="info">
+            <div class="information">
+              <img src="images/location.png" class="icon" alt="" />
+              <p>294/A colombo street</p>
+            </div>
+            <div class="information">
+              <img src="images/email.jpg" class="icon" alt="" />
+              <p>info@easyDo.com</p>
+            </div>
+            <div class="information">
+              <img src="images/phone.jpg" class="icon" alt="" />
+              <p>123-456-789</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/">
+                <img src="images/facebook.webp" class="social-icons" alt="" />
+              </a>
+              <a href="https://www.twitter.com/">
+                <img src="images/twitter.webp" class="social-icons" alt="" />
+              </a>
+              <a href="https://www.instagram.com/">
+                <img src="images/instegram.png" class="social-icons" alt="" />
+              </a>
+              <a href="https://www.linkedin.com/">
+                <img src="images/linkdin.png" class="social-icons" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+            <form id="contactForm" autocomplete="off" onsubmit="return validateForm()">
+              <h3 class="title">Contact us</h3>
+            
+              <div class="input-container">
+                <input type="text" name="name" placeholder="Username" class="input" />
+                <span>Username</span>
+                <small class="error-message"></small>
+              </div>
+            
+              <div class="input-container">
+                <input type="email" name="email" placeholder="Email" class="input" />
+                <small class="error-message"></small>
+              </div>
+            
+              <div class="input-container">
+                <input type="tel" name="phone" placeholder="Phone" class="input" />
+                <small class="error-message"></small>
+              </div>
+            
+              <div class="input-container textarea">
+                <textarea name="message" placeholder="Message" class="input"></textarea>
+                <span>Message</span>
+                <small class="error-message"></small>
+              </div>
+            
+              <input type="submit" value="Send" class="btn" />
+            </form>
+            
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-section">
+              <h3>easyDo</h3>
+              <p>Empowering your work, simplifying your life.</p>
+              <div class="social-links">
+                  <span class="icon"> <ion-icon name="logo-facebook"></ion-icon></ion-icon></span>
+                  <span class="icon"> <ion-icon name="logo-instagram"></ion-icon></ion-icon></span>
+                  <span class="icon"> <ion-icon name="mail"></ion-icon></ion-icon></span>
+                  <span class="icon"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></span>
+
+                  </div>
+          </div>
+
+          <div class="footer-section">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-section">
+              <h3>Our Services</h3>
+              <ul>
+                <li><a href="#">Mechanical</a></li> 
+                <li><a href="#">Construction</a></li>
+                <li><a href="#">Carpentry</a></li>
+                <li><a href="#">Plumbing </a></li>
+              </ul>
+          </div>
+
+          <div class="footer-section">
+              <h3>Contact Us</h3>
+              <ul class="contact-info">
+                  <li><i class="fas fa-map-marker-alt"></i> 294/A colombo street, Sri Lanka</li>
+                  <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+94 - 773454287</a></li>
+                  <li><i class="fas fa-envelope"></i> <a href="mailto:info@esydo.com">info@easyDo.com</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="copyright">
+          <p>&copy; 2024 easyDo. All rights reserved.</p>
+      </div>
+  </footer>
+
+    <script src="contact.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
